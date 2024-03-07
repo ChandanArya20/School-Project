@@ -3,47 +3,51 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="output.css" />
+        <link rel="stylesheet" href="./CSS/output.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style>
+            body {
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                overflow-x: hidden;
+            }
+        </style>
         <title>School Project</title>
     </head>
-    <body>
+    <body class="bg-gray-50">
         <!-- navabr section -->
-        <nav class="flex justify-between px-3 py-2">
+        <nav class="w-full flex flex-col md:flex-row justify-between px-3 py-2">
             <div class="flex items-center space-x-5">
                 <img
                     class="w-14 h-14 rounded-full"
-                    src="image/school logo.jpg"
+                    src="../image/school logo.jpg"
                 />
-                <p class="text-4xl font-semibold">St. Kabir Public School</p>
+                <p class="text-2xl md:text-4xl font-bold md:font-semibold">St. Kabir Public School</p>
             </div>
-            <!-- <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-
-            <div class="flex items-center">
-                <ul class="flex space-x-36 text-lg">
+        <div class="flex items-center bg-yellow-5 md:bg-white mt-2 md:mt-0">
+                <ul class="w-full flex justify-around md:space-x-28 text-lg">
                     <li
-                        class="cursor-pointer border-b-2 transition duration-300 ease-in-out border-white hover:border-yellow-500 text-violet-800"
+                        class="cursor-pointer border-b-2 transition duration-300 ease-in-out border-white hover:border-yellow-500 text-gray-70000 hover:text-black"
                     >
                         <a class="" href="index.html">Home </a>
                     </li>
                     <li
-                        class="cursor-pointer border-b-2 transition duration-300 ease-in-out border-white hover:border-yellow-500 text-violet-800"
+                        class="cursor-pointer border-b-2 transition duration-300 ease-in-out border-white hover:border-yellow-500 text-gray-70000 hover:text-black"
                     >
-                        <a class="" href="about.html ">About Us </a>
+                        <a class="" href="">About Us </a>
                     </li>
                     <li
-                        class="cursor-pointer border-b-2 transition duration-300 ease-in-out border-white hover:border-yellow-500 text-violet-800"
+                        class="cursor-pointer border-b-2 transition duration-300 ease-in-out border-white hover:border-yellow-500 text-gray-70000 hover:text-black"
                     >
-                        <a class="" href="event.html">Event Gallery </a>
+                        <a class="" href="">Event Gallery </a>
                     </li>
                 </ul>
             </div>
@@ -52,11 +56,13 @@
         <!-- main section -->
         <div
             class="w-full h-[450px] bg-cover bg-center"
-            style="background-image: url('./image/main school.jpeg')"
+            style="background-image: url('../image/main school.jpeg')"
         >
             <div class="w-full h-full bg-slate-600 opacity-40">
                 <div class="h-full flex justify-end space-x-8 p-5">
-                    <p class="text-5xl text-white font-semibold rounded-lg">
+                    <p
+                        class="text-5xl text-white font-semibold rounded-lg hidden lg:block"
+                    >
                         Creative Thinking & Innovation
                     </p>
                 </div>
@@ -64,80 +70,114 @@
         </div>
 
         <!-- Feature section -->
-        <div class="w-[93%] rounded-lg m-auto flex flex-col justify-center items-center bg-sky-100 px-6 py-5 mt-6">
-            <div class="mb-5">
-                <h1 class="text-3xl text-white font-medium bg-violet-800 p-2 rounded-xl ">Facilities</h1>
+        <div
+            class="w-[95%] rounded-lg m-auto flex flex-col justify-center items-center bg-sky-100 px-3 py-5 mt-6"
+        >
+            <div
+                class="w-full flex justify-center items-center mb-5 bg-violet-300 rounded-md"
+            >
+                <h1 class="text-3xl text-black font-medium p-2">Facilities</h1>
             </div>
-            <div class="w-full flex flex-col mt-3 space-y-8">
-                <div class="flex justify-between">
-                    <div
-                        class="w-[350px] p-6 rounded-lg shadow-lg bg-white"
-                    >
-                        <h4 class="text-xl font-medium text-center text-violet-600">Play Ground</h4>
-                        <p class="mt-4 font-serif">
-                            स्कूल के अंदर मनोरंजन लिए आकर्ष्क मैदान की ब्यवस्था है|
-                            जिसमे बच्चो को खेलने में कोई परेशानी नहीं होगी|
-                        </p>
-                    </div>
-                    <div class="w-[350px] p-6 rounded-lg shadow-lg bg-white">
-                        <h4 class="text-xl font-medium text-center text-violet-600">Music and Dance</h4>
-                        <p class="mt-4 font-serif ">
-                            स्कूल में अनुभवी शिक्षको द्वारा डांस म्यूजिक सिखाया जाता
-                            है समय-समय पर सांस्कृतिक कार्यक्रम का आयोजन किया जाता है|
-                        </p>
-                    </div>
-                    <div class="w-[350px] p-6 rounded-lg shadow-lg bg-white">
-                        <h4 class="text-xl font-medium text-center text-violet-600">Computer Lab</h4>
-                        <p class="mt-4 font-serif ">
-                            बच्चों के पाठ्यक्रम में पेंटिंग और रेखाचित्रण का किताब
-                            अनिवार्य कर दिया गया है यह बच्चों का बहुत प्रिय विषय है|
-                        </p>
-                    </div>
+            <div class="w-full flex flex-wrap justify-around mt-3">
+                <div
+                    class="w-[350px] p-6 rounded-lg shadow-lg bg-white border-[1px] border-gray-400  my-3"
+                >
+                    <h4 class="text-xl font-medium text-center text-green-600">
+                        Play Ground
+                    </h4>
+                    <p class="mt-4 font-serif">
+                        स्कूल के अंदर मनोरंजन लिए आकर्ष्क मैदान की ब्यवस्था है|
+                        जिसमे बच्चो को खेलने में कोई परेशानी नहीं होगी|
+                    </p>
                 </div>
-                <div class="flex justify-between">
-                    <div class="w-[350px] p-6 rounded-lg shadow-lg bg-white">
-                        <h4 class="text-xl font-medium text-center text-violet-600">Safe Transportation</h4>
-                        <p class="mt-4 font-serif ">
-                            स्कूल के द्वारा निजी वाहन का परिचालन किया जाता है जिससे
-                            बच्चो को घर से स्कूल और स्कूल से घर जाने में कोई समस्या नहीं
-                            होगी|
-                        </p>
-                    </div>
-                    <div class="w-[350px] p-6 rounded-lg shadow-lg bg-white">
-                        <h4 class="text-xl font-medium text-center text-violet-600">Healthy food</h4>
-                        <p class="mt-4 font-serif ">
-                            स्कूल कैंटीन में भोजन पौस्टिक आहार को ध्यान में रख कर बनाया
-                            जाता है ताकि बच्चे स्वस्थ रहे ,यहाँ शाकाहारी एवं मांसाहारी
-                            भोजन की ब्यवस्था है|
-                        </p>
-                    </div>
-                    <div class="w-[350px] p-6 rounded-lg shadow-lg bg-white">
-                        <h4 class="text-xl font-medium text-center text-violet-600">Educational Tour</h4>
-                        <p class="mt-4 font-serif ">
-                            स्कूल द्वारा समय-समय पर ऐतिहासिक स्थलो का भ्रमण कराया जाता
-                            हैजिससे बच्चे को अपने इतिहास को आसानी से समझना लेते है|
-                        </p>
-                    </div>
+                <div
+                    class="w-[350px] p-6 rounded-lg shadow-lg bg-white border-[1px] border-gray-400 my-3"
+                >
+                    <h4 class="text-xl font-medium text-center text-green-600">
+                        Music and Dance
+                    </h4>
+                    <p class="mt-4 font-serif">
+                        स्कूल में अनुभवी शिक्षको द्वारा डांस म्यूजिक सिखाया जाता
+                        है समय-समय पर सांस्कृतिक कार्यक्रम का आयोजन किया जाता
+                        है|
+                    </p>
+                </div>
+                <div
+                    class="w-[350px] p-6 rounded-lg shadow-lg bg-white border-[1px] border-gray-400  my-3"
+                >
+                    <h4 class="text-xl font-medium text-center text-green-600">
+                        Computer Lab
+                    </h4>
+                    <p class="mt-4 font-serif">
+                        बच्चों के पाठ्यक्रम में पेंटिंग और रेखाचित्रण का किताब
+                        अनिवार्य कर दिया गया है यह बच्चों का बहुत प्रिय विषय है|
+                    </p>
+                </div>
+                <div
+                    class="w-[350px] p-6 rounded-lg shadow-lg bg-white border-[1px] border-gray-400  my-3"
+                >
+                    <h4 class="text-xl font-medium text-center text-green-600">
+                        Safe Transportation
+                    </h4>
+                    <p class="mt-4 font-serif">
+                        स्कूल के द्वारा निजी वाहन का परिचालन किया जाता है जिससे
+                        बच्चो को घर से स्कूल और स्कूल से घर जाने में कोई समस्या
+                        नहीं होगी|
+                    </p>
+                </div>
+                <div
+                    class="w-[350px] p-6 rounded-lg shadow-lg bg-white border-[1px] border-gray-400  my-3"
+                >
+                    <h4 class="text-xl font-medium text-center text-green-600">
+                        Healthy food
+                    </h4>
+                    <p class="mt-4 font-serif">
+                        स्कूल कैंटीन में भोजन पौस्टिक आहार को ध्यान में रख कर
+                        बनाया जाता है ताकि बच्चे स्वस्थ रहे ,यहाँ शाकाहारी एवं
+                        मांसाहारी भोजन की ब्यवस्था है|
+                    </p>
+                </div>
+                <div
+                    class="w-[350px] p-6 rounded-lg shadow-lg bg-white border-[1px] border-gray-400  my-3"
+                >
+                    <h4 class="text-xl font-medium text-center text-green-600">
+                        Educational Tour
+                    </h4>
+                    <p class="mt-4 font-serif">
+                        स्कूल द्वारा समय-समय पर ऐतिहासिक स्थलो का भ्रमण कराया
+                        जाता हैजिससे बच्चे को अपने इतिहास को आसानी से समझना लेते
+                        है|
+                    </p>
                 </div>
             </div>
         </div>
 
         <!-- Owner Info -->
-        <div class="w-[93%] rounded-lg m-auto flex flex-col justify-center items-center border-2 p-10 mt-6">
-            <div class="mb-5 ">
-                <h1 class="text-3xl text-white font-medium bg-violet-800 p-2 rounded-xl ">Executive Team</h1>
+        <div
+            class="w-[95%] rounded-lg m-auto flex flex-col justify-center items-center border-2 px-3 py-4 mt-6"
+        >
+            <div
+                class="w-full flex justify-center items-center mb-5 bg-violet-200 rounded-md"
+            >
+                <h1 class="text-3xl text-black p-2 font-medium">
+                    Executive Team
+                </h1>
             </div>
-            <div class="w-full flex flex-col mt-3 space-y-8">
-                <div class="flex justify-between">
+            <div class="w-full flex flex-col mt-3">
+                <div class="flex flex-wrap justify-around">
                     <div
-                        class="w-[500px] flex flex-col justify-center items-center p-4 rounded-lg shadow-lg bg-white"
+                        class="w-[450px] flex flex-col justify-center items-center p-4 rounded-lg border-[1px] border-gray-400 bg-white my-3"
                     >
-                       <img src="./image/director.jpg" class="w-72 rounded-lg" alt="">
-                        <p class=" text-3xl font-bold text-center">
-                            Director
-                        </p>
+                        <img
+                            src="./image/director.jpg"
+                            class="w-72 rounded-lg"
+                            alt=""
+                        />
+                        <p class="text-3xl font-bold text-center">Director</p>
                         <div>
-                            <p class="mt-4 text-violet-600 font-serif text-center ">
+                            <p
+                                class="mt-4 text-rose-700 font-serif text-center"
+                            >
                                 Dharmesh sir
                             </p>
                             <p class="text-slate-600 text-center">
@@ -146,14 +186,18 @@
                         </div>
                     </div>
                     <div
-                        class="w-[500px] flex flex-col justify-center items-center p-4 rounded-lg shadow-lg bg-white"
+                        class="w-[450px] flex flex-col justify-center items-center p-4 rounded-lg border-[1px] border-gray-400 bg-white my-3"
                     >
-                       <img src="./image/principal.jpg" class="w-72 rounded-lg" alt="">
-                        <p class=" text-3xl font-bold text-center">
-                            Principal
-                        </p>
+                        <img
+                            src="./image/principal.jpg"
+                            class="w-72 rounded-lg"
+                            alt=""
+                        />
+                        <p class="text-3xl font-bold text-center">Principal</p>
                         <div>
-                            <p class="mt-4 text-violet-600 font-serif text-center">
+                            <p
+                                class="mt-4 text-rose-700 font-serif text-center"
+                            >
                                 Rakesh Mishra
                             </p>
                             <p class="text-slate-600 text-center">
@@ -165,29 +209,436 @@
             </div>
         </div>
 
-        <!-- Teachers -->
-        <div class="w-[93%] rounded-lg m-auto flex flex-col justify-center items-center border-2 px-6 py-4 mt-6">
-            <div class="mb-5">
-                <h1 class="text-3xl text-white font-medium bg-violet-800 p-2 rounded-xl">Our Teachers</h1>
+        <!-- हमारी विशेषताएं -->
+        <div
+            class="w-[95%] rounded-lg m-auto flex flex-col justify-center items-center border-2 px-3 py-4 mt-6 bg-yellow-100"
+        >
+            <div class="mb-5 flex flex-col justify-center items-center">
+                <h1 class="text-3xl font-medium text-violet-800 p-2 rounded-xl">
+                    हमारी विशेषताएं
+                </h1>
+                <p class="mt-5">
+                    यदि आप अपने बच्चे के लिए एक उत्कृष्ट शिक्षा केंद्र की तलाश
+                    में हैं, तो <b>संत कबीर पब्लिक स्कूल</b> आपके लिए सही विकल्प
+                    हो सकता है। हमारा पाठ्यक्रम CBSE बोर्ड के मानकों पर आधारित
+                    शिक्षा प्रणाली ने हमें विश्वसनीयता, शैली और गुणवत्ता में
+                    उच्च स्थान प्राप्त किया हैछात्रावास विश्वसनीयता, शैली और
+                    गुणवत्ता के साथ, <b>संत कबीर पब्लिक स्कूल</b> CBSE बोर्ड के
+                    संस्कृति का परिचय करता है। हम शिक्षा के क्षेत्र में एक
+                    उत्कृष्ट स्थान पर खड़े होने के लिए गर्वित हैं निम्नलिखित
+                    विशेषताएँ हमारे स्कूल को अन्य से अलग बनाती हैं:
+                </p>
             </div>
-            <div class="w-full flex flex-col mt-3 space-y-8">
-                <div class="flex justify-between">
+            <div class="w-full flex flex-wrap mt-3 bg-yellow-50 rounded-lg p-2">
+                <div
+                    class="w-full flex flex-col md:flex-row my-5 md:space-x-16"
+                >
+                    <div class="w-[30%]">
+                        <h4 class="text-nowrap text-xl font-bold">
+                            1 कुशल और प्रेरणादायक शिक्षक:-
+                        </h4>
+                    </div>
+                    <div class="w-full md:w-[70%]">
+                        <p class="p-2">
+                            हमारे अनुभवी शिक्षक छात्रों की आवश्यकताओं को समझते
+                            हैं और उन्हें प्रेरित करने के उपाय जानते हैं।
+                            समर्पित और उत्कृष्ट शिक्षक छात्रों के प्रत्येक
+                            शैक्षिक आवश्यकताओं को पूरा करने में सहायक होते हैं।
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="w-full flex flex-col md:flex-row my-5 md:space-x-16"
+                >
+                    <div class="w-[30%]">
+                        <h4 class="text-nowrap text-xl font-bold">
+                            2 छात्रावास :-
+                        </h4>
+                    </div>
+                    <div class="w-full md:w-[70%]">
+                        <p class="p-2">
+                            छात्र-छात्राओं के लिए छात्रावास की उत्तम व्यवस्था
+                            छात्रावास में छात्रों की सुरक्षा और संरक्षण की
+                            प्राथमिकता होती है, जिसमें 24x7 की निगरानी, सुरक्षा
+                            कर्मियों की उपस्थिति, और आवश्यकता अनुसारी सुरक्षा
+                            उपाय शामिल किया जाता हैं।
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="w-full flex flex-col md:flex-row my-5 md:space-x-16"
+                >
+                    <div class="w-[30%]">
+                        <h4 class="text-nowrap text-xl font-bold">
+                            3 कंप्यूटर प्रयोगशाला:-
+                        </h4>
+                    </div>
+                    <div class="w-full md:w-[70%]">
+                        <p class="p-2">
+                            स्कूल कंप्यूटर प्रयोगशाला छात्रों को आधुनिक तकनीकी
+                            कौशल प्रदान करने का महत्वपूर्ण स्रोत है। यहाँ पर
+                            छात्र सॉफ़्टवेयर, हार्डवेयर, ग्राफ़िक्स डिज़ाइनिंग,
+                            और इंटरनेट के साथ-साथ विभिन्न शैक्षिक सामग्री का
+                            अध्ययन करते हैं। कंप्यूटर प्रयोगशाला छात्रों के
+                            विकास में महत्वपूर्ण भूमिका निभाती है और उन्हें
+                            आधुनिक शिक्षा के साथ-साथ तकनीकी दुनिया में भी
+                            स्वतंत्रता प्राप्त करने का अवसर प्रदान करती है।
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Teachers -->
+        <div
+            class="w-[95%] rounded-lg m-auto flex flex-col justify-center items-center border-2 px-3 py-4 mt-6"
+        >
+            <div
+                class="w-full flex justify-center items-center mb-5 bg-violet-200 rounded-md"
+            >
+                <h1 class="text-3xl text-black font-medium p-2">
+                    Our Teachers
+                </h1>
+            </div>
+            <div class="w-full flex flex-wrap mt-3 justify-around">
+                <div
+                    class="w-full md:w-64 h-96 md:h-80 flex items-center flex-col rounded-lg box-shadow-around p-2 my-3"
+                >
+                    <div class="w-full h-[50%]">
+                        <img
+                            src="image/Teachers/teacher2.jpg"
+                            class="w-full rounded-lg"
+                            alt=""
+                        />
+                    </div>
                     <div
-                        class="w-[500px] p-6 rounded-lg shadow-lg bg-white"
+                        class="w-full h-[50%] flex flex-col items-center justify-end p-3 space-y-2"
                     >
-                        <h4 class="text-xl font-medium text-center text-violet-600">Play Ground</h4>
-                        <p class="mt-4 font-serif">
-                            स्कूल के अंदर मनोरंजन लिए आकर्ष्क मैदान की ब्यवस्था है|
-                            जिसमे बच्चो को खेलने में कोई परेशानी नहीं होगी|
+                        <h1 class="text-2xl font-medium">Teacher Name</h1>
+                        <p class="font-medium">
+                            Subject : <span class="font-normal">Math</span>
                         </p>
                     </div>
-                    <div class="w-[500px] p-6 rounded-lg shadow-lg bg-white">
-                        <h4 class="text-xl font-medium text-center text-violet-600">Music and Dance</h4>
-                        <p class="mt-4 font-serif ">
-                            स्कूल में अनुभवी शिक्षको द्वारा डांस म्यूजिक सिखाया जाता
-                            है समय-समय पर सांस्कृतिक कार्यक्रम का आयोजन किया जाता है|
+                </div>
+                <div
+                    class="w-full md:w-64 h-96 md:h-80 flex items-center flex-col rounded-lg box-shadow-around p-2 my-3"
+                >
+                    <div class="w-full h-[50%]">
+                        <img
+                            src="image/Teachers/tim1.jpg"
+                            class="w-full rounded-lg"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="w-full h-[50%] flex flex-col items-center justify-end p-3 space-y-2"
+                    >
+                        <h1 class="text-2xl font-medium">Teacher Name</h1>
+                        <p class="font-medium">
+                            Subject : <span class="font-normal">Math</span>
                         </p>
                     </div>
+                </div>
+                <div
+                    class="w-full md:w-64 h-96 md:h-80 flex items-center flex-col rounded-lg box-shadow-around p-2 my-3"
+                >
+                    <div class="w-full h-[50%]">
+                        <img
+                            src="image/Teachers/tim2.jpg"
+                            class="w-full rounded-lg"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="w-full h-[50%] flex flex-col items-center justify-end p-3 space-y-2"
+                    >
+                        <h1 class="text-2xl font-medium">Teacher Name</h1>
+                        <p class="font-medium">
+                            Subject : <span class="font-normal">Math</span>
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="w-full md:w-64 h-96 md:h-80 flex items-center flex-col rounded-lg box-shadow-around p-2 my-3"
+                >
+                    <div class="w-full h-[50%]">
+                        <img
+                            src="image/Teachers/tim3.jpg"
+                            class="w-full rounded-lg"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="w-full h-[50%] flex flex-col items-center justify-end p-3 space-y-2"
+                    >
+                        <h1 class="text-2xl font-medium">Teacher Name</h1>
+                        <p class="font-medium">
+                            Subject : <span class="font-normal">Math</span>
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="w-full md:w-64 h-96 md:h-80 flex items-center flex-col rounded-lg box-shadow-around p-2 my-3"
+                >
+                    <div class="w-full h-[50%]">
+                        <img
+                            src="image/Teachers/tim4.jpg"
+                            class="w-full rounded-lg"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="w-full h-[50%] flex flex-col items-center justify-end p-3 space-y-2"
+                    >
+                        <h1 class="text-2xl font-medium">Teacher Name</h1>
+                        <p class="font-medium">
+                            Subject : <span class="font-normal">Math</span>
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="w-full md:w-64 h-96 md:h-80 flex items-center flex-col rounded-lg box-shadow-around p-2 my-3"
+                >
+                    <div class="w-full h-[50%]">
+                        <img
+                            src="image/Teachers/tim5.jpg"
+                            class="w-full rounded-lg"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="w-full h-[50%] flex flex-col items-center justify-end p-3 space-y-2"
+                    >
+                        <h1 class="text-2xl font-medium">Teacher Name</h1>
+                        <p class="font-medium">
+                            Subject : <span class="font-normal">Math</span>
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="w-full md:w-64 h-96 md:h-80 flex items-center flex-col rounded-lg box-shadow-around p-2 my-3"
+                >
+                    <div class="w-full h-[50%]">
+                        <img
+                            src="image/Teachers/teacher2.jpg"
+                            class="w-full rounded-lg"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="w-full h-[50%] flex flex-col items-center justify-end p-3 space-y-2"
+                    >
+                        <h1 class="text-2xl font-medium">Teacher Name</h1>
+                        <p class="font-medium">
+                            Subject : <span class="font-normal">Math</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- event -->
+        <div
+            class="w-[95%] rounded-lg m-auto flex flex-col justify-center items-center border-2 px-3 py-4 mt-6"
+        >
+            <div class="mb-5 flex flex-col justify-center items-center">
+                <h1 class="text-3xl font-medium text-violet-800 p-2 rounded-xl">
+                    Our Events
+                </h1>
+            </div>
+            <div class="w-full flex flex-wrap mt-3 justify-around space-y-4">
+                <div
+                    class="w-full md:w-80 h-72 flex items-center flex-col rounded-lg shadow-xl p-2 my-3"
+                >
+                    <div class="w-full h-[80%]">
+                        <img
+                            src="image/teacherday.jpg"
+                            class="w-full rounded-lg"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="w-full h-[20%] flex flex-col items-center justify-center p-3 space-y-2"
+                    >
+                        <h1 class="text-2xl font-medium">Teachers Day</h1>
+                    </div>
+                </div>
+                <div
+                    class="w-full md:w-80 h-72 flex items-center flex-col rounded-lg shadow-xl p-2 my-3"
+                >
+                    <div class="w-full h-[80%]">
+                        <img
+                            src="image/yogdiwash.jpg"
+                            class="w-full rounded-lg"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="w-full h-[20%] flex flex-col items-center justify-center p-3 space-y-2"
+                    >
+                        <h1 class="text-2xl font-medium">Yogdiwash</h1>
+                    </div>
+                </div>
+                <div
+                    class="w-full md:w-80 h-72 flex items-center flex-col rounded-lg shadow-xl p-2 my-3"
+                >
+                    <div class="w-full h-[80%]">
+                        <img
+                            src="image/event3.jpg"
+                            class="w-full rounded-lg"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="w-full h-[20%] flex flex-col items-center justify-center p-3 space-y-2"
+                    >
+                        <h1 class="text-2xl font-medium">Independent Day</h1>
+                    </div>
+                </div>
+                <div
+                    class="w-full md:w-80 h-72 flex items-center flex-col rounded-lg shadow-xl p-2 my-3"
+                >
+                    <div class="w-full h-[80%]">
+                        <img
+                            src="image/event4.jpg"
+                            class="w-full rounded-lg"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="w-full h-[20%] flex flex-col items-center justify-center p-3 space-y-2"
+                    >
+                        <h1 class="text-2xl font-medium">Anual Function</h1>
+                    </div>
+                </div>
+                <div
+                    class="w-full md:w-80 h-72 flex items-center flex-col rounded-lg shadow-xl p-2 my-3"
+                >
+                    <div class="w-full h-[80%]">
+                        <img
+                            src="image/event5.jpg"
+                            class="w-full rounded-lg"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="w-full h-[20%] flex flex-col items-center justify-center p-3 space-y-2"
+                    >
+                        <h1 class="text-2xl font-medium">Childerns Day</h1>
+                    </div>
+                </div>
+                <div
+                    class="w-full md:w-80 h-72 flex items-center flex-col rounded-lg shadow-xl p-2 my-3"
+                >
+                    <div class="w-full h-[80%]">
+                        <img
+                            src="image/2 octembber.jpg"
+                            class="w-full rounded-lg"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="w-full h-[20%] flex flex-col items-center justify-center p-3 space-y-2"
+                    >
+                        <h1 class="text-2xl font-medium">2 Octember</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- हमारा पाठ्यक्रम -->
+        <div
+            class="w-[95%] rounded-lg m-auto flex flex-col justify-center items-center border-2 px-3 py-4 mt-6 bg-yellow-100"
+        >
+            <div class="mb-5 flex flex-col justify-center items-center">
+                <h1 class="text-3xl font-medium text-violet-800 p-2 rounded-xl">
+                    हमारा पाठ्यक्रम
+                </h1>
+                <p class="mt-5">
+                    यदि आप अपने बच्चे के लिए एक उत्कृष्ट शिक्षा केंद्र की तलाश
+                    में हैं, तो <b>संत कबीर पब्लिक स्कूल</b> आपके लिए सही विकल्प
+                    हो सकता है। हमारा पाठ्यक्रम CBSE बोर्ड के मानकों पर आधारित
+                    शिक्षा प्रणाली ने हमें विश्वसनीयता, शैली और गुणवत्ता में
+                    उच्च स्थान प्राप्त किया है। विश्वसनीयता, शैली और गुणवत्ता के
+                    साथ, <b>संत कबीर पब्लिक स्कूल</b> CBSE बोर्ड के संस्कृति का
+                    परिचय करता है। हम शिक्षा के क्षेत्र में एक उत्कृष्ट स्थान पर
+                    खड़े होने के लिए गर्वित हैं निम्नलिखित विशेषताएँ हमारे स्कूल
+                    को अन्य से अलग बनाती हैं
+                </p>
+            </div>
+            <div class="w-full flex flex-wrap mt-3 bg-yellow-50 rounded-lg p-2">
+                <div
+                    class="w-full flex flex-col md:flex-row my-5 md:space-x-16"
+                >
+                    <div class="w-[30%]">
+                        <h4 class="text-nowrap text-2xl font-bold">
+                            1 प्रौद्योगिकी और शैली:-
+                        </h4>
+                    </div>
+                    <div class="w-full md:w-[70%]">
+                        <p class="p-2">
+                            विभिन्न तकनीकी उपकरणों का प्रयोग और अद्वितीय शैली के
+                            साथ, हम छात्रों को आधुनिकतम शिक्षा प्रदान करते हैं।
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="w-full flex flex-col md:flex-row my-5 md:space-x-16"
+                >
+                    <div class="w-[30%]">
+                        <h4 class="text-nowrap text-2xl font-bold">
+                            2 नैतिक मूल्यों की प्रशिक्षण:-
+                        </h4>
+                    </div>
+                    <div class="w-full md:w-[70%]">
+                        <p class="p-2">
+                            हम न केवल शिक्षा, बल्कि नैतिक मूल्यों के विकास में
+                            भी छात्रों की प्रशिक्षण करते हैं, और शिक्षा के
+                            क्षेत्र में नैतिक मूल्यों की महत्वपूर्णता को समझते
+                            हैं और छात्रों को उनकी शैली और नैतिकता में सहयोग
+                            करने के लिए प्रेरित करते हैं। ताकि वे नैतिक निर्णय
+                            लेने में समर्थ हो सकें।
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+
+        <div
+            class="w-[100%] bg-[#183153] flex flex-col justify-center items-center p-5 mt-2"
+        >
+            <div class="flex flex-col items-center">
+                <h1 class="text-white text-2xl md:text-3xl">Sant Kabir Public School</h1>
+                <p
+                    class="text-lg md:text-base text-gray-200 font-semibold pt-5 pb-2"
+                >
+                    Contact us:
+                </p>
+            </div>
+            <div
+                class="flex flex-wrap justify-center text-white text-base md:text-base"
+            >
+                <div class="flex space-x-1 cursor-pointer items-center justify-center p-2">
+                    <i class="fa-brands fa-facebook text-[#3fbec3]"></i>
+                    <p>Facebook</p>
+                </div>
+                <div class="flex space-x-1 cursor-pointer items-center justify-center p-2">
+                    <i class="fa-brands fa-whatsapp text-[#3fbec3]"></i>
+                    <p>Whatsapp</p>
+                </div>
+                <div class="flex space-x-1 cursor-pointer items-center justify-center p-2">
+                    <i class="fa-brands fa-instagram text-[#3fbec3]"></i>
+                    <p>Insagram</p>
+                </div>
+                <div class="flex space-x-1 cursor-pointer items-center justify-center p-2">
+                    <i class="fa-solid fa-location-dot text-[#3fbec3]"></i>
+                    <p>Location</p>
+                </div>
+                <div class="flex space-x-1 cursor-pointer items-center justify-center p-2">
+                    <i class="fa-regular fa-envelope text-[#3fbec3]"></i>
+                    <p>Email</p>
                 </div>
             </div>
         </div>
