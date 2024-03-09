@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./CSS/output.css" />
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -24,16 +25,24 @@
     </head>
     <body class="bg-gray-50">
         <!-- navabr section -->
-        <nav class="w-full flex flex-col md:flex-row justify-between px-3 py-2">
-            <div class="flex items-center space-x-5">
+        <nav class="w-full flex justify-between px-2 md:px-8 py-2">
+            <div class="flex items-center space-x-5 relative z-20">
                 <img
-                    class="w-14 h-14 rounded-full"
+                    class="w-10 h-10 md:w-14 md:h-14 rounded-full"
                     src="../image/school logo.jpg"
                 />
-                <p class="text-2xl md:text-4xl font-bold md:font-semibold">St. Kabir Public School</p>
+                <p
+                    class="text-2xl md:text-4xl text-nowrap font-bold md:font-semibold"
+                >
+                    St. Kabir Public School
+                </p>
             </div>
-        <div class="flex items-center bg-yellow-5 md:bg-white mt-2 md:mt-0">
-                <ul class="w-full flex justify-around md:space-x-28 text-lg">
+            <div
+                class="absolute -top-28 left-0 w-full z-10 flex duration-200 md:static md:flex md:justify-end bg-white dropdown-menu"
+            >
+                <ul
+                    class="w-full flex flex-col items-center space-y-4 font-semibold p-2 md:flex-row md:justify-end md:space-y-0 md:space-x-28 md:font-normal md:text-lg"
+                >
                     <li
                         class="cursor-pointer border-b-2 transition duration-300 ease-in-out border-white hover:border-yellow-500 text-gray-70000 hover:text-black"
                     >
@@ -42,14 +51,21 @@
                     <li
                         class="cursor-pointer border-b-2 transition duration-300 ease-in-out border-white hover:border-yellow-500 text-gray-70000 hover:text-black"
                     >
-                        <a class="" href="">About Us </a>
+                        <a class="" href="./HTML/about.html">About</a>
                     </li>
                     <li
                         class="cursor-pointer border-b-2 transition duration-300 ease-in-out border-white hover:border-yellow-500 text-gray-70000 hover:text-black"
                     >
-                        <a class="" href="">Event Gallery </a>
+                        <a class="text-nowrap" href="/HTML/event.html"
+                            >Event Gallery
+                        </a>
                     </li>
                 </ul>
+            </div>
+            <div
+                class="flex md:hidden justify-center items-center toggle-botton"
+            >
+                <i class="fa-solid fa-bars text-2xl text-black"></i>
             </div>
         </nav>
 
@@ -80,7 +96,7 @@
             </div>
             <div class="w-full flex flex-wrap justify-around mt-3">
                 <div
-                    class="w-[350px] p-6 rounded-lg shadow-lg bg-white border-[1px] border-gray-400  my-3"
+                    class="w-[350px] p-6 rounded-lg shadow-lg bg-white border-[1px] border-gray-300 my-3"
                 >
                     <h4 class="text-xl font-medium text-center text-green-600">
                         Play Ground
@@ -91,7 +107,7 @@
                     </p>
                 </div>
                 <div
-                    class="w-[350px] p-6 rounded-lg shadow-lg bg-white border-[1px] border-gray-400 my-3"
+                    class="w-[350px] p-6 rounded-lg shadow-lg bg-white border-[1px] border-gray-300 my-3"
                 >
                     <h4 class="text-xl font-medium text-center text-green-600">
                         Music and Dance
@@ -103,7 +119,7 @@
                     </p>
                 </div>
                 <div
-                    class="w-[350px] p-6 rounded-lg shadow-lg bg-white border-[1px] border-gray-400  my-3"
+                    class="w-[350px] p-6 rounded-lg shadow-lg bg-white border-[1px] border-gray-300 my-3"
                 >
                     <h4 class="text-xl font-medium text-center text-green-600">
                         Computer Lab
@@ -114,7 +130,7 @@
                     </p>
                 </div>
                 <div
-                    class="w-[350px] p-6 rounded-lg shadow-lg bg-white border-[1px] border-gray-400  my-3"
+                    class="w-[350px] p-6 rounded-lg shadow-lg bg-white border-[1px] border-gray-300 my-3"
                 >
                     <h4 class="text-xl font-medium text-center text-green-600">
                         Safe Transportation
@@ -126,7 +142,7 @@
                     </p>
                 </div>
                 <div
-                    class="w-[350px] p-6 rounded-lg shadow-lg bg-white border-[1px] border-gray-400  my-3"
+                    class="w-[350px] p-6 rounded-lg shadow-lg bg-white border-[1px] border-gray-300 my-3"
                 >
                     <h4 class="text-xl font-medium text-center text-green-600">
                         Healthy food
@@ -138,7 +154,7 @@
                     </p>
                 </div>
                 <div
-                    class="w-[350px] p-6 rounded-lg shadow-lg bg-white border-[1px] border-gray-400  my-3"
+                    class="w-[350px] p-6 rounded-lg shadow-lg bg-white border-[1px] border-gray-300 my-3"
                 >
                     <h4 class="text-xl font-medium text-center text-green-600">
                         Educational Tour
@@ -605,12 +621,13 @@
         </div>
 
         <!-- footer -->
-
         <div
             class="w-[100%] bg-[#183153] flex flex-col justify-center items-center p-5 mt-2"
         >
             <div class="flex flex-col items-center">
-                <h1 class="text-white text-2xl md:text-3xl">Sant Kabir Public School</h1>
+                <h1 class="text-white text-2xl md:text-3xl">
+                    Sant Kabir Public School
+                </h1>
                 <p
                     class="text-lg md:text-base text-gray-200 font-semibold pt-5 pb-2"
                 >
@@ -620,27 +637,39 @@
             <div
                 class="flex flex-wrap justify-center text-white text-base md:text-base"
             >
-                <div class="flex space-x-1 cursor-pointer items-center justify-center p-2">
+                <div
+                    class="flex space-x-1 cursor-pointer items-center justify-center p-2"
+                >
                     <i class="fa-brands fa-facebook text-[#3fbec3]"></i>
                     <p>Facebook</p>
                 </div>
-                <div class="flex space-x-1 cursor-pointer items-center justify-center p-2">
+                <div
+                    class="flex space-x-1 cursor-pointer items-center justify-center p-2"
+                >
                     <i class="fa-brands fa-whatsapp text-[#3fbec3]"></i>
                     <p>Whatsapp</p>
                 </div>
-                <div class="flex space-x-1 cursor-pointer items-center justify-center p-2">
+                <div
+                    class="flex space-x-1 cursor-pointer items-center justify-center p-2"
+                >
                     <i class="fa-brands fa-instagram text-[#3fbec3]"></i>
                     <p>Insagram</p>
                 </div>
-                <div class="flex space-x-1 cursor-pointer items-center justify-center p-2">
+                <div
+                    class="flex space-x-1 cursor-pointer items-center justify-center p-2"
+                >
                     <i class="fa-solid fa-location-dot text-[#3fbec3]"></i>
                     <p>Location</p>
                 </div>
-                <div class="flex space-x-1 cursor-pointer items-center justify-center p-2">
+                <div
+                    class="flex space-x-1 cursor-pointer items-center justify-center p-2"
+                >
                     <i class="fa-regular fa-envelope text-[#3fbec3]"></i>
                     <p>Email</p>
                 </div>
             </div>
         </div>
+
+        <script src="JavaScript/script.js"></script>
     </body>
 </html>
