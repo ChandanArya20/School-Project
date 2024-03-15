@@ -9,3 +9,8 @@
 .down-menu{
     top: 3rem;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+

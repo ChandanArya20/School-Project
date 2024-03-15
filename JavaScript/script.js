@@ -4,7 +4,7 @@ const menuIcon = document.querySelector(".toggle-botton i");
 
 toggleButton.addEventListener("click", () => {
     
-    dropdownMenu.classList.toggle("down-menu");
+    dropdownMenu.classList.toggle("h-0");
 
     // Toggle the icon between bars and xmark
     menuIcon.classList.toggle("fa-bars");
